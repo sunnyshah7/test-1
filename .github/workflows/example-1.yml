@@ -4,6 +4,8 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+            - name: download repo
+              uses: actions/checkout@v4
             - name: welcome page
               run: echo "welcome to the github"
 
