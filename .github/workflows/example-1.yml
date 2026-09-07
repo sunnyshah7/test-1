@@ -4,12 +4,12 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
-            name: welcome page
-            run: echo "welcome to the github"
+            - name: welcome page
+              run: echo "welcome to the github"
 
-            name:  list the files
-            run: ls
+            - name:  list the files
+              run: ls
             
-            name: read the file
-            run: cat README.md
+            - name: read the file
+              run: cat README.md
             
