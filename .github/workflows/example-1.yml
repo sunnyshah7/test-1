@@ -11,6 +11,8 @@ jobs:
 
             - name: read the file
               run: cat README.md
+            - name: install the cowsay
+              run: sudo apt-get install cowsay -y
             - name: execute cowsay
               run: cowsay -f dragon "this is a dragon symbol" >> dragon.txt
             - name:  list the files
