@@ -9,9 +9,11 @@ jobs:
             - name: welcome page
               run: echo "welcome to the github"
 
-            - name:  list the files
-              run: ls
-            
             - name: read the file
               run: cat README.md
-            
+            - name: execute cowsay
+              run: cowsay -f dragon "this is a dragon symbol" >> dragon.txt
+            - name:  list the files
+              run: ls
+            - name: Read the 2nd file
+              run : cat dragon.txt
