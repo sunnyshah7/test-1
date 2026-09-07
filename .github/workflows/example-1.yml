@@ -6,16 +6,14 @@ jobs:
         steps:
             - name: download repo
               uses: actions/checkout@v4
-            - name: welcome page
-              run: echo "welcome to the github"
-
-            - name: read the file
-              run: cat README.md
             - name: install the cowsay
               run: sudo apt-get install cowsay -y
             - name: execute cowsay
               run: cowsay -f dragon "this is a dragon symbol" >> dragon.txt
-            - name:  list the files
-              run: ls
-            - name: Read the 2nd file
-              run : cat dragon.txt
+           
+            - name: Welcome and list the files
+              run: | 
+                cat README.md 
+                echo "welcome to the github"
+                ls
+                cat dragon.txt
